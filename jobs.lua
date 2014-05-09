@@ -140,12 +140,26 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
 		You can raid.
 		You can mug.
 		You can kidnap.]],
-	weapons = {"m9k_sig_p229r", "m9k_honeybadger", "lockpick", "unarrest_stick"},
+	weapons = {"lockpick", "unarrest_stick"},
 	command = "thief",
 	max = 5,
 	salary = 65,
 	admin = 0,
 	vote = false,
+	hasLicense = false
+})
+
+TEAM_GUARD = DarkRP.createJob("Guard", {
+	color = Color(0, 255, 255, 255),
+	model = "models/odessa.mdl",
+	description = [[You are paid by those who want protection.
+	You may kill those who try to raid or mug whoever you are defending.]],
+	weapons = {"m9k_sig_p229r", "stunstick"},
+	command = "thief",
+	max = 2,
+	salary = 50,
+	admin = 0,
+	vote = true,
 	hasLicense = false
 })
 
