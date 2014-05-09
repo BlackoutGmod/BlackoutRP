@@ -102,7 +102,7 @@ TEAM_CINEMA = DarkRP.createJob("Cinema Owner", {
 
 TEAM_DRUG = DarkRP.createJob("Drug Dealer", {
 	color = Color(152, 0, 182, 255),
-	model = "models/Eli.mdl",
+	model = "models/eli.mdl",
 	description = [[You are a Drug Dealer. You sell illegal narcotics to the people of the city. If you get caught doing your job, you may be arrested.
 		You cannot raid.
 		You cannot mug.
@@ -129,6 +129,22 @@ TEAM_BURRITO = DarkRP.createJob("Superior Thief", {
 	max = 1,
 	salary = 90,
 	admin = 1,
+	vote = false,
+	hasLicense = false
+})
+
+TEAM_THIEF = DarkRP.createJob("Thief", {
+	color = Color(0, 255, 255, 255),
+	model = "models//player/arctic.mdl",
+	description = [[You are a Thief. You break into people's houses and steal their goods for a living.
+		You can raid.
+		You can mug.
+		You can kidnap.]],
+	weapons = {"m9k_sig_p229r", "m9k_honeybadger", "lockpick", "unarrest_stick"},
+	command = "thief",
+	max = 5,
+	salary = 65,
+	admin = 0,
 	vote = false,
 	hasLicense = false
 })
